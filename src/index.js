@@ -41,6 +41,7 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 
 console.log('project wired!')
 
+// Header section
 const logo = document.querySelector('#logo-img');
 logo.src = siteContent.images['logo-img'];
 
@@ -48,3 +49,25 @@ const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach( (link, i) =>{
   link.textContent = siteContent['nav'][`nav-item-${i+1}`];
 });
+
+// cta Section
+const ctaHeader = document.querySelector('h1');
+const ctaButton = document.querySelector('button');
+const ctaImage = document.querySelector('#cta-img');
+
+// Main Content Section
+const features = document.querySelector('.top-content .text-content:nth-of-type(1)');
+const about = document.querySelector('.top-content .text-content:nth-of-type(2)');
+const mcImage = document.querySelector('.middle-img');
+const services = document.querySelector('.bottom-content .text-content:nth-of-type(1)');
+const product = document.querySelector('.bottom-content .text-content:nth-of-type(2)');
+const vision = document.querySelector('.bottom-content .text-content:nth-of-type(3)');
+
+// Contact Section
+const contact = document.querySelector('.contact');
+const para1 = contact.querySelector('p:nth-of-type(1)');
+const para2 = para1.nextElementSibling;
+const para3 = para2.nextElementSibling;
+
+// Footer Section
+const copyright = document.querySelector('footer a');
