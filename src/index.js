@@ -46,7 +46,9 @@ const logo = document.querySelector('#logo-img');
 logo.src = siteContent.images['logo-img'];
 
 const navLinks = document.querySelectorAll('nav a');
+//navLinks.className = 'italic';
 navLinks.forEach( (link, i) =>{
+  link.className = 'italic';
   link.textContent = siteContent['nav'][`nav-item-${i+1}`];
 });
 
@@ -97,3 +99,4 @@ para3.textContent = siteContent.contact.email;
 // Footer Section
 const copyright = document.querySelector('footer a');
 copyright.textContent = siteContent.footer.copyright;
+copyright.className = 'bold';
