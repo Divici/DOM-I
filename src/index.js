@@ -40,3 +40,11 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+const logo = document.querySelector('#logo-img');
+logo.src = siteContent.images['logo-img'];
+
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach( (link, i) =>{
+  link.textContent = siteContent['nav'][`nav-item-${i+1}`];
+});
